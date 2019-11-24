@@ -1,0 +1,12 @@
+//page-color
+$primary-color: #444;
+$secondary-color:#eece1a;
+
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
